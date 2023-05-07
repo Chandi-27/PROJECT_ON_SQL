@@ -1,3 +1,11 @@
+import mysql.connector
+conn = mysql.connector.connect(
+    host="localhost",
+    database="Inventory_Management",
+    user ="root",
+    password="Chandi@123")
+cor = conn.cursor() 
+
 CREATE DATABASE Inventory_Management1;
 CREATE TABLE manufacture1 (
     manufacture_id INT PRIMARY KEY,
